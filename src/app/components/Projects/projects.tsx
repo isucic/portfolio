@@ -1,4 +1,9 @@
+import Card from "./projectCard";
+import data from "../../json/data.json";
+
 export default function Projects() {
+
+    const projects = data.project
   return (
     <section
       id="projects"
@@ -8,6 +13,14 @@ export default function Projects() {
         Projects
       </h1>
       <div className="w-1/4 border-customyellow border-2"></div>
+      <div className="">
+        {projects.map((project, index) => {
+            return (
+                <Card project={project}/>
+
+            )
+        })}
+      </div>
     </section>
   );
 }
