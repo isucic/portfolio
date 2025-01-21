@@ -13,9 +13,10 @@ export default function About() {
           Welcome to my portfolio.
         </h1>
         <p className="text-xl xl:text-3xl text-customgrey py-4">
-          A computer science graduate with a passion for building intuitive and
-          functional web applications. I love tackling new challenges while
-          continuously improving my skills.
+          A newly graduated computer engineer with a passion for web development
+          and a curiosity for exploring other areas of technology. I enjoy
+          tackling new challenges while continuously expanding my knowledge and
+          skills.
         </p>
         <div className="flex space-x-4 py-4">
           <button className="bg-customyellow hover:bg-white border-2 border-customyellow hover:text-customyellow transition duration-300 px-3 py-2 rounded-md">
