@@ -14,6 +14,9 @@ export default {
         customgrey: "#828282",
         customyellow: "#FDC435",
       },
+      fontFamily: {
+        sans: ["Roboto", "Arial", "sans-serif"],
+      },
     },
   },
   plugins: [],

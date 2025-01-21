@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
 export default function Card({
   project,
   index,
 }: {
-  project: { title: string; description: string; photo: string };
+  project: {
+    title: string;
+    description: string;
+    photo: string;
+    source_code: string;
+    demo: string;
+  };
   index: number;
 }) {
   const truncatedDescription =
@@ -27,10 +34,20 @@ export default function Card({
             index % 2 === 0 ? "" : "grid justify-end"
           }`}
         >
-          <button className="text-xs md:text-sm xl:text-lg bg-customyellow hover:bg-white text-black hover:text-customyellow border-2 border-customyellow transition duration-300 px-4 py-1 rounded-full">
+          <button
+            onClick={() => {
+              window.open(`${project.demo}`, "_blank");
+            }}
+            className="text-xs md:text-sm xl:text-lg bg-customyellow hover:bg-white text-black hover:text-customyellow border-2 border-customyellow transition duration-300 px-4 py-1 rounded-full"
+          >
             View Demo
           </button>
-          <button className="flex justify-center items-center text-xs md:text-sm xl:text-lg hover:bg-black hover:text-white border-2 border-black transition duration-300 px-4 py-1 rounded-full group">
+          <button
+            onClick={() => {
+              window.open(`${project.source_code}`, "_blank");
+            }}
+            className="flex justify-center items-center text-xs md:text-sm xl:text-lg hover:bg-black hover:text-white border-2 border-black transition duration-300 px-4 py-1 rounded-full group"
+          >
             Source
             <img
               src="/github-logo.png"

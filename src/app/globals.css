@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #f9faff;
   --foreground: #171717;
@@ -43,7 +47,7 @@ button {
 
 @media (min-width: 1024px) {
   body {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }

@@ -15,12 +15,16 @@ const Header = () => {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 w-screen bg-white shadow-md z-50 px-2 sm:px-2 md:px-8 lg:px-28">
+      <div className="flex justify-between items-center px-6 py-4">
         <Link href="/">
           <p className="text-2xl font-bold text-gray-800 cursor-pointer xl:hover:text-indigo-600">
             Ivana Sučić

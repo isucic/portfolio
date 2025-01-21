@@ -3,17 +3,23 @@
     {
       "photo": "/charter.jpg",
       "title": "Charterag",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "description": "Sailing experience frontend page created using Next.js.",
+      "source_code": "https://github.com/isucic/Sailing-Experience",
+      "demo": "https://sailing-experience.vercel.app/"
     },
     {
       "photo": "/rentalcar.jpg",
       "title": "Rental Car",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "description": "Web application for car rental services. Applying the knowledge of good design principles acquired in the Human-Computer Interaction course.",
+      "source_code": "https://github.com/isucic/rental-car",
+      "demo": "https://go-wheels-rental-car.vercel.app"
     },
     {
       "photo": "/shelter.jpg",
       "title": "Animal Shelter",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "description": "A 5-page frontend website for animal shelter using React. Enhanced by integrating a backend built with Node.js and Express.js, enabling features such as animal record management, user roles, and form submissions.",
+      "source_code": "https://github.com/isucic/Animal-shelter-v2",
+      "demo": "https://animal-shelter-frontend.onrender.com/"
     }
   ]
 }
