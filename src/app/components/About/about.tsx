@@ -10,10 +10,10 @@ export default function About() {
         continuously improving my skills.
       </p>
       <div className="flex space-x-4">
-        <button className="bg-customyellow hover:bg-white border-2 border-customyellow hover:text-customyellow transition duration-300 px-3 py-2 rounded-md font-semibold">
+        <button className="bg-customyellow hover:bg-white border-2 border-customyellow hover:text-customyellow transition duration-300 px-3 py-2 rounded-md">
           Projects
         </button>
-        <button className="hover:bg-black hover:text-white transition duration-300 px-3 py-2 rounded-md border-black border-2 font-semibold">
+        <button className="hover:bg-black hover:text-white transition duration-300 px-3 py-2 rounded-md border-black border-2">
           LinkedIn
         </button>
       </div>

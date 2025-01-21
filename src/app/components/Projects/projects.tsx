@@ -2,8 +2,7 @@ import Card from "./projectCard";
 import data from "../../json/data.json";
 
 export default function Projects() {
-
-    const projects = data.project
+  const projects = data.project;
   return (
     <section
       id="projects"
@@ -13,12 +12,9 @@ export default function Projects() {
         Projects
       </h1>
       <div className="w-1/4 border-customyellow border-2"></div>
-      <div className="">
+      <div className="grid grid-cols-1 gap-6 xl:gap-10 py-4 xl:py-16">
         {projects.map((project, index) => {
-            return (
-                <Card project={project}/>
-
-            )
+          return <Card project={project} index={index} key={index} />;
         })}
       </div>
     </section>
