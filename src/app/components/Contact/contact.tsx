@@ -10,8 +10,8 @@ export default function Contact() {
       </h1>
       <div className="w-1/4 border-customyellow border-2"></div>
       <p className="text-lg xl:text-xl text-customgrey py-4 text-center">
-        Feel free to reach out if you want to collaborate or just say hi. You
-        can find me on GitHub or contact me directly via email.
+        Feel free to reach out or just say hi. You can find me on GitHub or
+        contact me directly via email.
       </p>
 
       <div className="flex gap-4">

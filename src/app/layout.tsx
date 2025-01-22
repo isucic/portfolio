@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Comfortaa, Playfair_Display, Roboto } from "next/font/google";
 import Header from "./components/Header/header";
+import Footer from "./components/Footer/footer";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -40,11 +41,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${nunito.variable} ${comfortaa.variable} ${playfairDisplay.variable} ${roboto.variable} antialiased`}
     >
-      <body>
+      <body className="flex flex-col min-h-screen">
         <Header />
-        {children}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
