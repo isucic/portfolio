@@ -20,7 +20,7 @@ export default function Card({
 
   return (
     <div
-      className={`bg-white rounded-md flex shadow-md ${
+      className={`bg-white rounded-md flex shadow-md w-full ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
       }`}
     >
@@ -59,7 +59,7 @@ export default function Card({
         </div>
       </div>
 
-      <div className="relative w-1/2 h-[350px]">
+      <div className="relative w-1/2 h-full">
         <Image
           src={project.photo}
           alt={project.title}
